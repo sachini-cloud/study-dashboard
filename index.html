@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <header>
+        <h1 id="greeting">Welcome!</h1>
+        <div id="digital-clock">00:00:00</div>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main class="content-grid">
+
+        <!-- TIMER SECTION -->
+        <section class="card timer-card">
+            <h2>Study Timer</h2>
+
+            <!-- Timer Modes -->
+            <div class="mode-buttons">
+                <button class="mode-btn" data-time="25">Pomodoro</button>
+                <button class="mode-btn" data-time="5">Short Break</button>
+                <button class="mode-btn" data-time="15">Long Break</button>
+            </div>
+
+            <!-- Custom Timer Input -->
+            <div class="input-group">
+                <input type="number" id="minutes-input" placeholder="Enter minutes">
+                <button id="set-timer-btn">Set</button>
+            </div>
+
+            <div id="timer-display">25:00</div>
+
+            <div class="controls">
+                <button id="start-btn">Start</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <!-- TO-DO SECTION (FIXED STRUCTURE) -->
+        <section class="card todo-card">
+            <h2>Today's Tasks</h2>
+
+            <!-- Input -->
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="New task...">
+                <button id="add-task-btn">Add</button>
+            </div>
+
+            <!-- Task List -->
+            <ul id="task-list"></ul>
+        </section>
+
+    </main>
+</div>
+
+<!-- TIMER MODAL (FOCUS MODE) -->
+<div id="timer-modal" class="timer-modal hidden">
+    <div class="timer-modal-content">
+
+        <div id="big-timer">25:00</div>
+
+        <div class="modal-controls">
+            <button id="pause-btn">Pause</button>
+            <button id="resume-btn">Resume</button>
+            <button id="close-modal-btn">Close</button>
+        </div>
+
+    </div>
+</div>
+
+<!-- ALARM SOUND -->
+<audio id="alarm-sound">
+    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
