@@ -1,7 +1,7 @@
 /* BODY */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #e6f0ed;
+    background: linear-gradient(135deg, #dff7f2, #fef6ff);
     display: flex;
     justify-content: center;
     padding: 10px 20px;
@@ -25,177 +25,85 @@ header {
 #digital-clock {
     font-size: 3rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #5a4fcf;
     margin-top: 10px;
-}
-
-/* DARK MODE */
-body.dark {
-    background-color: #1e1e2f;
-    color: #f1f1f1;
-}
-
-body.dark .card {
-    background-color: #2a2a40;
-    color: #ffffff;
-}
-
-body.dark input {
-    background-color: #3a3a55;
-    color: #fff;
-    border: 1px solid #555;
-}
-
-body.dark button {
-    background-color: #555;
-}
-
-body.dark button:hover {
-    background-color: #777;
-}
-
-body.dark #digital-clock {
-    color: #ffffff;
-}
-/* Dark mode - fix TODO text color */
-body.dark .task-text {
-    color: #ffffff;
-}
-
-/* Also fix task background */
-body.dark li {
-    background-color: #52526e;
-}
-
-/* Optional: better border color */
-body.dark li {
-    border-left: 4px solid #5dade2;
-}
-
-/* GRID */
-.content-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
 }
 
 /* CARD */
 .card {
-    background: white;
+    background: linear-gradient(145deg, #ffffff, #f3f9ff);
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(90, 79, 207, 0.15);
     text-align: center;
     transition: 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px rgba(90, 79, 207, 0.2);
 }
 
 /* TIMER DISPLAY */
 #timer-display {
     font-size: 4rem;
     margin: 20px 0;
-    color: #e74c3c;
-}
-
-/* INPUT GROUP */
-.input-group {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    color: #ff6b6b;
 }
 
 /* INPUT */
 input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 1px solid #cfd9ff;
+    border-radius: 8px;
     outline: none;
 }
 
 /* BUTTONS */
 button {
     padding: 10px 16px;
-    background-color: #18b2ad;
+    background: linear-gradient(135deg, #6a5af9, #00c9a7);
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
     transition: 0.2s;
 }
 
 button:hover {
-    background-color: #029a92;
+    background: linear-gradient(135deg, #5848e5, #00a88a);
 }
 
 /* MODE BUTTONS */
-.mode-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
 .mode-btn {
-    background-color: #09d886;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     font-size: 12px;
 }
 
 .mode-btn:hover {
-    background-color: #27ae60;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
 }
 
-
-/*PROFESSIONAL TODO LIST */
-
-
-/* Reset list */
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Each task item */
+/* TODO LIST */
 li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff, #f0faff);
     padding: 14px 16px;
     margin-bottom: 12px;
-    border-radius: 12px;
-    border-left: 8px solid #0fb989;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 14px;
+    border-left: 6px solid #00c9a7;
+    box-shadow: 0 6px 16px rgba(0, 201, 167, 0.2);
     transition: all 0.25s ease;
 }
 
-/* Hover effect */
+/* Hover */
 li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-
-/* Left side (checkbox + text) */
-.task-left {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    flex: 1;
-    min-width: 0;
-}
-
-/* Checkbox (modern look) */
-.task-left input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    accent-color: #4a90e2;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 201, 167, 0.3);
 }
 
 /* Task text */
@@ -204,19 +112,18 @@ li:hover {
     word-break: break-word;
     font-size: 16px;
     font-weight: 500;
-    color: #2c3e50;
-    letter-spacing: 0.3px;
+    color: #34495e;
 }
 
-/* Completed task */
+/* Completed */
 .task-text.completed {
     text-decoration: line-through;
-    color: #95a5a6;
+    color: #a0aec0;
 }
 
 /* Delete button */
 .delete-btn {
-    background: linear-gradient(135deg, #c85b5b, #e74c3c);
+    background: linear-gradient(135deg, #ff6a6a, #ff3d68);
     color: #ffffff;
     padding: 6px 12px;
     font-size: 12px;
@@ -226,82 +133,7 @@ li:hover {
     transition: all 0.2s ease;
 }
 
-/* Delete button hover */
 .delete-btn:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
-}
-
-/* THEME BUTTON */
-#theme-toggle {
-    margin-top: 12px;
-}
-
-/* Optional: Smooth fade-in animation */
-li {
-    animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* TIMER MODAL (FOCUS MODE) */
-
-
-.timer-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    animation: fadeIn 0.3s ease;
-}
-
-/* HIDDEN */
-.hidden {
-    display: none;
-}
-
-/* MODAL CONTENT */
-.timer-modal-content {
-    text-align: center;
-    color: white;
-    animation: scaleUp 0.3s ease;
-}
-
-/* BIG TIMER */
-#big-timer {
-    font-size: 8rem;
-    font-weight: bold;
-    margin-bottom: 60px;
-}
-
-/* MODAL BUTTONS */
-.modal-controls button {
-    margin: 10px;
-}
-
-/* ANIMATIONS */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes scaleUp {
-    from { transform: scale(0.8); }
-    to { transform: scale(1); }
+    background: linear-gradient(135deg, #ff3d68, #c9184a);
 }
