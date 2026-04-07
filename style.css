@@ -142,12 +142,12 @@ button:hover {
 }
 
 .mode-btn {
-    background-color: #09d886;
+    background-color: #18b2ad;
     font-size: 12px;
 }
 
 .mode-btn:hover {
-    background-color: #27ae60;
+    background-color: #029a92;
 }
 
 
@@ -170,7 +170,7 @@ li {
     padding: 14px 16px;
     margin-bottom: 12px;
     border-radius: 12px;
-    border-left: 8px solid #0fb989;
+    border-left: 8px solid #18b2ad;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
     transition: all 0.25s ease;
 }
